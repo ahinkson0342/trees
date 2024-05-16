@@ -6,15 +6,29 @@ public class TestTree
 {
     public static void main(String[] args)
     {
-        String[] words = {"was", "this", "and", "or", "but", "to"};
+//        String[] words = {"was", "this", "and", "or", "but", "to"};
+//
+//        BinarySearchTree<String> bst = new BinarySearchTree<>();
+//
+//        for (String word : words)
+//        {
+//            bst.add(word);
+//        }
+//
+//        System.out.println(bst);
 
-        BinarySearchTree<String> bst = new BinarySearchTree<>();
+        int[] elements = {90, 50, 110, 45, 80, 97, 130};
 
-        for (String word : words)
+        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+
+        for (Integer num : elements)
         {
-            bst.add(word);
+            bst.add(num);
         }
 
         System.out.println(bst);
+
+        System.out.println(bst.contains(46));
+
     }
 }
